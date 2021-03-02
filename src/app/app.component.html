@@ -1,0 +1,42 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <div class="container">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarToggler"
+      aria-controls="navbarToggler"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarToggler">
+      <a class="navbar-brand" [routerLink]="['/']">
+        <span class="border rounded shadow p-1 lead">
+          <strong>CIMPL</strong>
+        </span>
+      </a>
+    </div>
+    <ul class="navbar-nav ml-auto mt-lg-0">
+      <!-- <li class="nav-item mr-2">
+        <a class="btn btn-info" [routerLink]="['/storage']">Storage</a>
+      </li>
+      <li class="nav-item mr-2">
+        <a class="btn btn-info" [routerLink]="['/collibra']">Collibra</a>
+      </li> -->
+      <!-- <li class="nav-item mr-2" *ngIf="!(auth.loggedIn | async)">
+        <a class="btn btn-info" [routerLink]="['/login']">Login</a>
+      <li>
+      <li class="nav-item mr-2" *ngIf="auth.loggedIn | async">
+        <a class="btn btn-warning" (click)="onClickLogout()">Logout</a>
+      </li>
+      <li class="nav-item mr-2" *ngIf="!(auth.loggedIn | async)">
+        <a class="btn btn-info" [routerLink]="['/signup']">Sign Up</a>
+      </li> -->
+    </ul>
+  </div>
+</nav>
+
+<alert></alert>
+<router-outlet></router-outlet>
